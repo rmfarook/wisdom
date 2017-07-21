@@ -6,6 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/modal.css">
+  
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -217,14 +219,22 @@
 <div class="jumbotron text-center">
   <h1>Wisdom Edu</h1> 
   <p>We specialize in skill building toys</p> 
-  <form>
+  <!-- <form>
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
         <button type="button" class="btn btn-danger">Subscribe</button>
       </div>
     </div>
-  </form>
+  </form> -->
+  <form class="form-inline">
+ 
+  <div class="form-group">
+    <!-- <label for="exampleInputEmail2">Email</label> -->
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="mymail@example.com">
+  </div>
+  <button type="submit" class="btn btn-danger">Subscribe</button>
+</form>
 </div>
 
 <!-- Container (About Section) -->
@@ -234,7 +244,7 @@
       <h2>About Company </h2><br>
       <h4>Wisdom Edu is a leading company in producing world class skill building toys. The company focus mainly on the development of the children from the very young age.</h4><br>
       <p>Wisdom Edu makes children spend their time in developing knowledge through interactive skill building toys. These toys would make  the children think more about attaining their mission.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <br><button class="btn btn-default btn-lg" data-toggle="modal" data-target="#login-modal">Get in Touch</button>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -382,7 +392,7 @@
   </ul>          
 		  </div>
         <div class="panel-footer">
-               <button class="btn btn-lg">Sign Up</button>
+               <button class="btn btn-lg" data-toggle="modal" data-target="#login-modal">Sign Up</button>
         </div>
       </div>      
     </div>  
@@ -404,7 +414,7 @@
         </div>
         <div class="panel-footer">
           
-          <button class="btn btn-lg">Sign Up</button>
+          <button class="btn btn-lg" data-toggle="modal" data-target="#login-modal">Sign Up</button>
         </div>
       </div>      
     </div>   	
@@ -425,7 +435,7 @@
         </div>
         <div class="panel-footer">
           
-          <button class="btn btn-lg">Sign Up</button>
+          <button class="btn btn-lg"data-toggle="modal" data-target="#login-modal">Sign Up</button>
         </div>
       </div>      
     </div>       
@@ -446,7 +456,7 @@
         </div>
         <div class="panel-footer">
          
-          <button class="btn btn-lg">Sign Up</button>
+          <button class="btn btn-lg" data-toggle="modal" data-target="#login-modal">Sign Up</button>
         </div>
       </div>      
     </div>    
@@ -494,11 +504,62 @@ marker.setMap(map);
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATP318tnz0kaVMPRUD3MiMd1HXkaBe-o4&callback=myMap"></script>
+<!-- <div class="container-fluid bg-grey">
+<div class="row">
+<div class="col-sm-12">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248845.94505474728!2d77.43235812161427!3d12.957904658199562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1500601851864" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div> -->
+
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
+<!-- Modal DIalog -->
+<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Subscribe With Us</h1><br>
+								  <form>
+				  <div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name">
+				  </div>
+				  <div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+					<label for="mobile">Mobile Number:</label>
+					<input type="text" class="form-control" id="mobile">
+				  </div>
+				  <div class="form-group">
+					<label for="address">Contact address:</label>
+					<input type="text" class="form-control" id="address">
+				  </div>
+				  <div class="form-group">
+					<label for="city">city:</label>
+					<input type="text" class="form-control" id="city">
+				  </div>
+				  <div class="form-group">
+					<label for="state">State:</label>
+					<input type="text" class="form-control" id="state">
+				  </div>
+				 
+				  <button type="submit" class="btn btn-danger">Submit</button>
+				</form>
+					
+				 
+				</div>
+			</div>
+		  </div>
+		  </div>
+		  </div>
+		  <!-- Modal Dialog closes -->
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
