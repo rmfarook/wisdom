@@ -208,7 +208,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#age">AGE LEVEL</a></li>
-        <li><a href="#services">SERVICES</a></li>
+         <li><a href="#howitworks">HOW IT WORKS</a></li>
+		 <li><a href="#services">SERVICES</a></li>
         <li><a href="#pricing">PRICING</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -265,7 +266,7 @@
   </div>
 </div>
 
-<!-- Container (Services Section) -->
+<!-- Container (Age Level Section) -->
 <div id="age" class="container-fluid text-center">
   <h2>AGE LEVEL</h2>
   <h4>We categorize children as below</h4>
@@ -306,8 +307,37 @@
     </div>
   </div>
 </div>
+<!-- How it works -->
+<div id="howitworks" class="container-fluid text-center" >
+  <h2 style="margin-bottom:0px;margin-top:1px;">HOW IT WORKS</h2><br>
+  <h4>The Steps are here for you </h4>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/howitworks.jpg" alt="Howitworks" width="400" height="300">
+        <!-- <p><strong>Innovative & Engaging</strong></p>
+        <p>We provide innovative and engaging tasks which the child can do it very easily by spending some valuable hours of time. Learning skills with fun makes us special.</p> -->
+      </div>
+    </div>
+    <div class="col-sm-8">
+      
+	  <ul class="list-group text-left">
+			<li class="list-group-item">*&nbsp&nbsp; Browse through our plans and select a subscription plan based on your choice. </li>
+			<li class="list-group-item">*&nbsp;&nbsp; Once we received your order, we will send you the products to your mailing address based on the subscription.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; Every month we will follow a theme and you would be receving your products depends on the month's theme.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; The product can be gifted to your child or to your relative's / neighbour's child.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; You can see them building their thinking and problem solving in real time.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; Together we build quality children and a quality nation. Please click here for Subscription. 
+			<button class="btn btn-danger" data-toggle="modal" data-target="#login-modal">Subscribe</button>
+			</li>
+  </ul>    
+    </div>
+   
+  </div>
+  </div>
 
-<!-- Container (Portfolio Section) -->
+
+<!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center bg-grey" >
   <h2 style="margin-bottom:0px;margin-top:1px;">Services</h2><br>
   <h4>What we do </h4>
@@ -323,7 +353,7 @@
       <div class="thumbnail">
         <img src="img/guarantee.jpg" alt="QA" width="400" height="300">
         <p><strong>Quality Assured</strong></p>
-        <p>We have a dedicated team of expertizes in making quailty products. The materials used are natural and thoroughly tested by Quality Assurance team.  </p>
+        <p>We have a dedicated team of expertizes in making quality products. The materials used are natural and thoroughly tested by Quality Assurance team.  </p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -496,7 +526,7 @@
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var myCenter = new google.maps.LatLng(13.0827, 80.2707);
 var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
@@ -523,7 +553,10 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
-					<h1>Subscribe With Us</h1><br>
+					<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Subscribe with Us</h4>
+        </div>
 								  <form>
 				  <div class="form-group">
 					<label for="name">Name:</label>
@@ -557,14 +590,14 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 				</div>
 			</div>
 		  </div>
-		  </div>
-		  </div>
+		 
 		  <!-- Modal Dialog closes -->
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="#" title="Visit RMF Media Tech Solutions">www.rmfmediatech.com</a></p>
+  <p>Designed By <a href="#" title="Visit RMF Media Tech Solutions">www.rmfmediatech.com</a></p>
+  <p>Copyright 2015 - 2022. All rights reserved.</p>
 </footer>
 
 <script>
