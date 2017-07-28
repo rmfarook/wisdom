@@ -6,8 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/modal.css">
-  
+  <!--<link rel="stylesheet" href="css/modal.css">-->
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -190,6 +193,8 @@
         font-size: 150px;
     }
   }
+  
+  
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -245,7 +250,7 @@
       <h2>About Company </h2><br>
       <h4>Wisdom Edu is a leading company in producing world class skill building toys. The company focus mainly on the development of the children from the very young age.</h4><br>
       <p>Wisdom Edu makes children spend their time in developing knowledge through interactive skill building toys. These toys would make  the children think more about attaining their mission.</p>
-      <br><button class="btn btn-default btn-lg" data-toggle="modal" data-target="#login-modal">Get in Touch</button>
+      <br><button class="btn btn-danger active btn-lg" data-toggle="modal" data-target="#login-modal">Get in Touch</button>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -328,7 +333,7 @@
 			<li class="list-group-item">*&nbsp;&nbsp; The product can be gifted to your child or to your relative's / neighbour's child.</li>
 			<li class="list-group-item">*&nbsp;&nbsp; You can see them building their thinking and problem solving skills in real time.</li>
 			<li class="list-group-item">*&nbsp;&nbsp; Together we build quality children and a quality nation. Please click here for Subscription. 
-			<button class="btn btn-danger" data-toggle="modal" data-target="#login-modal">Subscribe</button>
+			<button class="btn btn-danger active" data-toggle="modal" data-target="#login-modal">Subscribe</button>
 			</li>
   </ul>    
     </div>
@@ -515,7 +520,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-info active pull-right" type="submit">Submit</button>
         </div>
       </div>
     </div>
@@ -550,7 +555,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 <!-- Modal DIalog -->
 <!--<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>-->
 
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<!--<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<div class="modal-header">
@@ -589,21 +594,209 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 				 
 				</div>
 			</div>
-		  </div>
+		  </div>-->
+		 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-info">
+			
+			<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Subscribe with Us</h4>
+        </div>
+        		<!-- <div class="panel-heading">
+			    		<h3 class="panel-title">Please subscribe with us <small>It's free!</small></h3>
+			 			</div> -->
+			 			<div class="panel-body">
+			    		<form role="form" method="post">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="form-group">
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="contactno" id="contactno" class="form-control input-sm" placeholder="Contact Number">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="Mobile" id="Mobile" class="form-control input-sm" placeholder="Mobile Number">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="state" id="state" class="form-control input-sm" placeholder="State">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="city" id="city" class="form-control input-sm" placeholder="City">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="form-group">
+									<textarea class="form-control" rows="5" id="comment" placeholder="Address"></textarea>
+							</div>
+								
+								<div class="form-group">
+							    <select class="form-control" id="age">
+								<option>-Select Age Level-</option>
+								<option>TODDLER</option>
+								<option>PRE-KINDERGARTEN</option>
+								<option>KINDERGARTEN</option>
+								<option>PRIMARY</option>
+								<option>ELEMENTARY</option>
+								<option>MIDDLE</option>
+							  </select>
+							</div>
+							<div class="form-group">
+							    <select class="form-control" id="subscribe_mts">
+								<option>-Select Months-</option>
+								<option>3 Months</option>
+								<option>6 Months</option>
+								<option>9 Months</option>
+								<option>12 Months</option>
+								 </select>
+							</div>
+			    			
+			    			<input type="submit" value="Submit" class="btn btn-info">
+			    		
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
 		 
 		  <!-- Modal Dialog closes -->
-<footer class="container-fluid text-center">
+		 <!--  <footer class="navbar-default navbar-static-bottom">
+<div class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p>Designed By <a href="#" title="Visit RMF Media Tech Solutions">www.rmfmediatech.com</a></p>
   <p>Copyright 2015 - 2022. All rights reserved.</p>
-</footer>
+  <div class="text-center center-block">
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+</div>
+</div>
+</footer> -->
 
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+                    <h3> Site Map </h3>
+                    <ul class="footlink">
+                        <li> <a href="#about"> About Us </a> </li>
+                        <li> <a href="#howitworks"> How it works </a> </li>
+                        <li> <a href="#pricing"> Pricing </a> </li>
+                        <li> <a href="#contact"> Contact Us </a> </li>
+                    </ul>
+                </div>
+				
+				  <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+                    <h3> Links </h3>
+                    <ul>
+                        <li> <a href="#"> Testimonials </a> </li>
+                        <li> <a href="#"> FAQ </a> </li>
+                        <li> <a href="#"> Cancellation Policy </a> </li>
+                        <li> <a href="#"> Privacy Policy </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+                    <h3> Logo </h3>
+                    <!-- <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul> -->LOGO
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+                    <h3> Subscribe </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="mymail@example.com ">
+                                <button class="btn  btn-danger active" type="button"> Subscribe </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © 2016 - 2020 Wisdom Edu Inc. - All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                	<li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                  <!--   <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a></li> -->
+                </ul> 
+				 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a,.footlink a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
