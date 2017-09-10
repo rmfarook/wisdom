@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="css/modal.css">-->
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #cc150a;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #cc150a;
+      font-size: 50px;
+  }
+  .logo {
+      color: #cc150a;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #cc150a;
+  }
+  .carousel-indicators li {
+      border-color: #cc150a;
+  }
+  .carousel-indicators li.active {
+      background-color: #cc150a;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #cc150a; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #cc150a;
+      background-color: #fff !important;
+      color: #cc150a;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #cc150a !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #cc150a;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #cc150a;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #cc150a !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #cc150a;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  
+  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo <?php echo "Test";?></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#age">AGE LEVEL</a></li>
+         <li><a href="#howitworks">HOW IT WORKS</a></li>
+		 <li><a href="#services">SERVICES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Wisdom Edu</h1> 
+  <p>We specialize in skill building toys</p> 
+  <!-- <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form> -->
+  <form class="form-inline">
+ 
+  <div class="form-group">
+    <!-- <label for="exampleInputEmail2">Email</label> -->
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="mymail@example.com">
+  </div>
+  <button type="submit" class="btn btn-danger">Subscribe</button>
+</form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company </h2><br>
+      <h4>Wisdom Edu is a leading company in producing world class skill building toys. The company focus mainly on the development of the children from the very young age.</h4><br>
+      <p>Wisdom Edu makes children spend their time in developing knowledge through interactive skill building toys. These toys would make  the children think more about attaining their mission.</p>
+      <br><button class="btn btn-danger active btn-lg" data-toggle="modal" data-target="#login-modal">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-education logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission is to  make every child build their talents from their very young age through interactive medium.</h4><br>
+      <p><strong>VISION:</strong> Our vision is every child should identify their skills and talents and follow their passion and be successful in their life. Children are greatest assets to a family as well as to a country and hence growth of the children should always a huge responsiblity on us. </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Age Level Section) -->
+<div id="age" class="container-fluid text-center">
+  <h2>AGE LEVEL</h2>
+  <h4>We categorize children as below</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-font logo-small"></span>
+      <h4>TODDLER</h4>
+      <p>1.5 - 3 Years.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-bell logo-small"></span>
+      <h4>PRE-KINDERGARTEN</h4>
+      <p>3 - 4.5 Years.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-pencil logo-small"></span>
+      <h4>KINDERGARTEN</h4>
+      <p>4.5 - 6 Years.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-folder-open logo-small"></span>
+      <h4>PRIMARY</h4>
+      <p>6 - 8 Years.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-blackboard logo-small"></span>
+      <h4>ELEMENTARY</h4>
+      <p>8 - 10 Years.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h4 style="color:#303030;">MIDDLE SCHOOL</h4>
+      <p>10 - 12 Years.</p>
+    </div>
+  </div>
+</div>
+<!-- How it works -->
+<div id="howitworks" class="container-fluid text-center" >
+  <h2 style="margin-bottom:0px;margin-top:1px;">HOW IT WORKS</h2><br>
+  <h4>The Steps are here for you </h4>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/howitworks.jpg" alt="Howitworks" width="400" height="300">
+        <!-- <p><strong>Innovative & Engaging</strong></p>
+        <p>We provide innovative and engaging tasks which the child can do it very easily by spending some valuable hours of time. Learning skills with fun makes us special.</p> -->
+      </div>
+    </div>
+    <div class="col-sm-8">
+      
+	  <ul class="list-group text-left">
+			<li class="list-group-item">*&nbsp&nbsp; Browse through our plans and select a subscription plan that suits your choice. </li>
+			<li class="list-group-item">*&nbsp;&nbsp; Once we received your order, we will send you the products to your mailing address based on the subscription.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; Every month we will follow a theme and you would be receving your products depends on the month's theme.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; The product can be gifted to your child or to your relative's / neighbour's child.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; You can see them building their thinking and problem solving skills in real time.</li>
+			<li class="list-group-item">*&nbsp;&nbsp; Together we build quality children and a quality nation. Please click here for Subscription. 
+			<button class="btn btn-danger active" data-toggle="modal" data-target="#login-modal">Subscribe</button>
+			</li>
+  </ul>    
+    </div>
+   
+  </div>
+  </div>
+<br>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center bg-grey" >
+  <h2 style="margin-bottom:0px;margin-top:1px;">Services</h2><br>
+  <h4>What we do </h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/innov.jpg" alt="Innovative" width="400" height="300">
+        <p><strong>Innovative & Engaging</strong></p>
+        <p>We provide innovative and engaging tasks which the child can do it very easily by spending some valuable hours of time. Learning skills with fun makes us special.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/guarantee.jpg" alt="QA" width="400" height="300">
+        <p><strong>Quality Assured</strong></p>
+        <p>We have a dedicated team of expertizes in making quality products. The materials used are natural and thoroughly tested by Quality Assurance team.  </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/supp.png" alt="Support" width="400" height="300">
+        <p><strong>Support</strong></p>
+        <p>We provide great support in identifying the needs of  the parents by regular surveys and feedbacks. We provide assistance in return / replacement of the products.</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"They do a wonderful job !!!. I am so happy with my son's result!."<br><span>Senthil Kumar, IT Professional, Chennai.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Marvelous product that keeps my daughter busy always. She learns problem solving skills with fun!!"<br><span>John David, Salesman, Chennai.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"I gifted one of their products to my neice and she really loves it. My sister is so happy that her daughter does not take mobile phone unlike earlier."<br><span>Ismail Binth, Home Maker, Chennai. </span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>3 Months</h1>
+        </div>
+        <div class="panel-body">
+		<ul class="list-group">
+  <li class="list-group-item">Toddler <span class="badge" style="background-color:red;">$10</span></li>
+  <li class="list-group-item">Pre-Kindergarten <span class="badge" style="background-color:red;">$15</span></li> 
+  <li class="list-group-item">Kindergarten <span class="badge" style="background-color:red;">$20</span></li> 
+  <li class="list-group-item">Primary <span class="badge" style="background-color:red;">$25</span></li> 
+  <li class="list-group-item">Elementary <span class="badge" style="background-color:red;">$30</span></li> 
+  <li class="list-group-item">Middle <span class="badge" style="background-color:red;">$35</span></li> 
+  </ul>          
+		  </div>
+        <div class="panel-footer">
+               <button class="btn btn-lg" data-toggle="modal" data-target="#login-modal">Sign Up</button>
+        </div>
+      </div>      
+    </div>  
+<div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>6 Months</h1>
+        </div>
+        <div class="panel-body">
+         <ul class="list-group">
+  <li class="list-group-item">Toddler <span class="badge" style="background-color:red;">$10</span></li>
+  <li class="list-group-item">Pre-Kindergarten <span class="badge" style="background-color:red;">$15</span></li> 
+  <li class="list-group-item">Kindergarten <span class="badge" style="background-color:red;">$20</span></li> 
+  <li class="list-group-item">Primary <span class="badge" style="background-color:red;">$25</span></li> 
+  <li class="list-group-item">Elementary <span class="badge" style="background-color:red;">$30</span></li> 
+  <li class="list-group-item">Middle <span class="badge" style="background-color:red;">$35</span></li> 
+  </ul>   
+         
+        </div>
+        <div class="panel-footer">
+          
+          <button class="btn btn-lg" data-toggle="modal" data-target="#login-modal">Sign Up</button>
+        </div>
+      </div>      
+    </div>   	
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>9 Months</h1>
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+  <li class="list-group-item">Toddler <span class="badge" style="background-color:red;">$10</span></li>
+  <li class="list-group-item">Pre-Kindergarten <span class="badge" style="background-color:red;">$15</span></li> 
+  <li class="list-group-item">Kindergarten <span class="badge" style="background-color:red;">$20</span></li> 
+  <li class="list-group-item">Primary <span class="badge" style="background-color:red;">$25</span></li> 
+  <li class="list-group-item">Elementary <span class="badge" style="background-color:red;">$30</span></li> 
+  <li class="list-group-item">Middle <span class="badge" style="background-color:red;">$35</span></li> 
+  </ul>   
+        </div>
+        <div class="panel-footer">
+          
+          <button class="btn btn-lg"data-toggle="modal" data-target="#login-modal">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>12 Months</h1>
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+  <li class="list-group-item">Toddler <span class="badge" style="background-color:red;">$10</span></li>
+  <li class="list-group-item">Pre-Kindergarten <span class="badge" style="background-color:red;">$15</span></li> 
+  <li class="list-group-item">Kindergarten <span class="badge" style="background-color:red;">$20</span></li> 
+  <li class="list-group-item">Primary <span class="badge" style="background-color:red;">$25</span></li> 
+  <li class="list-group-item">Elementary <span class="badge" style="background-color:red;">$30</span></li> 
+  <li class="list-group-item">Middle <span class="badge" style="background-color:red;">$35</span></li> 
+  </ul>   
+        </div>
+        <div class="panel-footer">
+         
+          <button class="btn btn-lg" data-toggle="modal" data-target="#login-modal">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chennai, IN</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-info active pull-right" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(13.0827, 80.2707);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATP318tnz0kaVMPRUD3MiMd1HXkaBe-o4&callback=myMap"></script>
+<!-- <div class="container-fluid bg-grey">
+<div class="row">
+<div class="col-sm-12">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248845.94505474728!2d77.43235812161427!3d12.957904658199562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1500601851864" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div> -->
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Modal DIalog -->
+<!--<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>-->
+
+<!--<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Subscribe with Us</h4>
+        </div>
+								  <form>
+				  <div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name">
+				  </div>
+				  <div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+					<label for="mobile">Mobile Number:</label>
+					<input type="text" class="form-control" id="mobile">
+				  </div>
+				  <div class="form-group">
+					<label for="address">Contact address:</label>
+					<input type="text" class="form-control" id="address">
+				  </div>
+				  <div class="form-group">
+					<label for="city">city:</label>
+					<input type="text" class="form-control" id="city">
+				  </div>
+				  <div class="form-group">
+					<label for="state">State:</label>
+					<input type="text" class="form-control" id="state">
+				  </div>
+				 
+				  <button type="submit" class="btn btn-danger">Submit</button>
+				</form>
+					
+				 
+				</div>
+			</div>
+		  </div>-->
+		 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-info">
+			
+			<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Subscribe with Us</h4>
+        </div>
+        		<!-- <div class="panel-heading">
+			    		<h3 class="panel-title">Please subscribe with us <small>It's free!</small></h3>
+			 			</div> -->
+			 			<div class="panel-body">
+			    		<form role="form" method="post">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="form-group">
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="contactno" id="contactno" class="form-control input-sm" placeholder="Contact Number">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="Mobile" id="Mobile" class="form-control input-sm" placeholder="Mobile Number">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="state" id="state" class="form-control input-sm" placeholder="State">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="city" id="city" class="form-control input-sm" placeholder="City">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="form-group">
+									<textarea class="form-control" rows="5" id="comment" placeholder="Address"></textarea>
+							</div>
+								
+								<div class="form-group">
+							    <select class="form-control" id="age">
+								<option>-Select Age Level-</option>
+								<option>TODDLER</option>
+								<option>PRE-KINDERGARTEN</option>
+								<option>KINDERGARTEN</option>
+								<option>PRIMARY</option>
+								<option>ELEMENTARY</option>
+								<option>MIDDLE</option>
+							  </select>
+							</div>
+							<div class="form-group">
+							    <select class="form-control" id="subscribe_mts">
+								<option>-Select Months-</option>
+								<option>3 Months</option>
+								<option>6 Months</option>
+								<option>9 Months</option>
+								<option>12 Months</option>
+								 </select>
+							</div>
+			    			
+			    			<input type="submit" value="Submit" class="btn btn-info">
+			    		
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+		 
+		  <!-- Modal Dialog closes -->
+		 <!--  <footer class="navbar-default navbar-static-bottom">
+<div class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Designed By <a href="#" title="Visit RMF Media Tech Solutions">www.rmfmediatech.com</a></p>
+  <p>Copyright 2015 - 2022. All rights reserved.</p>
+  <div class="text-center center-block">
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+</div>
+</div>
+</footer> -->
+
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+                    <h3> Site Map </h3>
+                    <ul class="footlink">
+                        <li> <a href="#about"> About Us </a> </li>
+                        <li> <a href="#howitworks"> How it works </a> </li>
+                        <li> <a href="#pricing"> Pricing </a> </li>
+                        <li> <a href="#contact"> Contact Us </a> </li>
+                    </ul>
+                </div>
+				
+				  <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+                    <h3> Links </h3>
+                    <ul>
+                        <li> <a href="#"> Testimonials </a> </li>
+                        <li> <a href="#"> FAQ </a> </li>
+                        <li> <a href="#"> Cancellation Policy </a> </li>
+                        <li> <a href="#"> Privacy Policy </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6">
+                    <h3> Logo </h3>
+                    <!-- <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul> -->LOGO
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-3 col-xs-6 ">
+                    <h3> Subscribe </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="mymail@example.com ">
+                                <button class="btn  btn-danger active" type="button"> Subscribe </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © 2016 - 2020 Wisdom Edu Inc. - All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                	<li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                  <!--   <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a></li> -->
+                </ul> 
+				 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a,.footlink a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
